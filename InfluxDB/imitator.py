@@ -9,10 +9,10 @@ if __name__ == "__main__":
     while True:
         client.write_points([
             {
-                "measurement": "name",
-                "parametrs": parametrs
+                "measurement": "measurement_tsdb",
+                "fields": fields
            }
         ])
-        for a in fields:
-            fields[a] += -1 + random.randint(0, 1)*2
+        for element in fields:
+            fields[element] += -1 + random.randint(0, 1)*2
         time.sleep(1)
