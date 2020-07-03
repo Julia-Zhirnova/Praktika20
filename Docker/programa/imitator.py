@@ -4,7 +4,7 @@ import time
 import random
 
 if __name__ == "__main__":
-    client = InfluxDBClient(host='localhost', port=8086, database="tsdb")
+    client = InfluxDBClient(host='influx', port=8086, database="tsdb")
     fields = {x: random.randint(0, 100) for x in CS.VARS_LIST}
     while True:
         client.write_points([
