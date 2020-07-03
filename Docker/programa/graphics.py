@@ -6,7 +6,7 @@ import constants as CS
 
 if __name__ == "__main__":
      
-    client = InfluxDBClient(host='localhost', port=8086, database="tsdb")
+    client = InfluxDBClient(host='influx', port=8086, database="tsdb")
     fields = {x: [] for x in CS.VARS_LIST}
     time = []
 
