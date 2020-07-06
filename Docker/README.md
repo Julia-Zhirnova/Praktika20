@@ -1,4 +1,5 @@
 sudo service influxdb stop 
+
 Для запуска докера:
  1. sudo xhost +
  2. sudo docker-compose build
