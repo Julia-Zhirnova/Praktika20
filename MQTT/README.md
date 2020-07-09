@@ -1,8 +1,10 @@
 Для запуска докера:
+
     остановить базу данных
     sudo service influxdb stop
     остановить сервер mqtt
     /etc/init.d/mosquitto stop
+    
     sudo xhost +
     sudo docker-compose build
     sudo docker-compose up -d
