@@ -5,9 +5,9 @@ sudo service influxdb stop
 остановить сервер mqtt
 /etc/init.d/mosquitto stop
 
-sudo xhost +
-sudo docker-compose build
-sudo docker-compose up -d
+  sudo xhost +
+  sudo docker-compose build
+  sudo docker-compose up -d
 
 В интернет ввести:
 
