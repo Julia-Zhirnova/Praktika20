@@ -6,7 +6,9 @@ sudo service influxdb stop
 /etc/init.d/mosquitto stop
 
   sudo xhost +
+  
   sudo docker-compose build
+  
   sudo docker-compose up -d
 
 В интернет ввести:
