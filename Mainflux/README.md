@@ -1,5 +1,5 @@
 
-Запуск mainflux
+Запуск mainflux (sudo fuser -k 1883/tcp - освободить порт n)
 
   1. sudo make run
 
@@ -73,3 +73,11 @@ export USERTOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTQ5NDIxNjMsIm
 
 2. mosquitto_pub -u f91806e4-fecd-408e-bd79-dd8f04a73579 -P $THINGTOKEN -t channels/e923ab60-90c7-4df9-9091-4f1c726dee84/messages -m "test"
                                                 (id у things 1)                 (id у channels)
+
+Удаление 
+ 
+ 1. ./mainflux-cli things delete f4d497a5-f152-47f8-b101-0610f6ea4a20 $USERTOKEN
+ 
+ 2. ./mainflux-cli things delete f91806e4-fecd-408e-bd79-dd8f04a73579 $USERTOKEN
+ 
+ 3. ./mainflux-cli channels delete e923ab60-90c7-4df9-9091-4f1c726dee84 $USERTOKEN
