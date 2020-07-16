@@ -1,4 +1,6 @@
 
+cd mainflux/
+
 Запуск mainflux (sudo fuser -k 1883/tcp - освободить порт n)
 
   1. sudo make run
