@@ -1,5 +1,6 @@
 
 Запуск mainflux-cli
+  
   1. wget https://github.com/mainflux/mainflux/releases/downloa.. 16:03:43— https://github.com/mainflux/mainflux/releases/downloa..
 tar xvf mainflux-cli_v0.11.0_linux-amd64.tar.gz
 
