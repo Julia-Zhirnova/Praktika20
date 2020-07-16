@@ -81,3 +81,9 @@ export USERTOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTQ5NDIxNjMsIm
  2. ./mainflux-cli things delete f91806e4-fecd-408e-bd79-dd8f04a73579 $USERTOKEN
  
  3. ./mainflux-cli channels delete e923ab60-90c7-4df9-9091-4f1c726dee84 $USERTOKEN
+ 
+ Удаляем контейнеры sudo docker rm -f $(sudo docker ps -aq)
+
+ Удаляем изображения sudo docker rmi -f $(sudo docker images -q)
+
+
