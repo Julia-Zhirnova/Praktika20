@@ -16,7 +16,8 @@
 
       {"status":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoidWxpYSIsIm5taHMiOiIwZjMxM2M5YjY4MTQ4MDMwMDg3NWJjZTI2ZmE5YjE0ODMyNTMyZmM1OWJlZTg2ZDZlODZhMWY5OTU4Nzk1MDhiIiwic2VjIjoiaWVpZWllaWFhYWFhYWFvb28xMjQxMDI0azEyMCIsInJhbmRvbSI6IjAuMDA5NzQzMDAyNDg2Nzc2MTc2In0.pw6nbeITQkpFXyxds9VaV3Rc4d9JQFkAw-G6TkkpgzI"}
 
-      создаем переменную
+   Cоздаем переменную
+   
       curl -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoidWxpYSIsIm5taHMiOiIwZjMxM2M5YjY4MTQ4MDMwMDg3NWJjZTI2ZmE5YjE0ODMyNTMyZmM1OWJlZTg2ZDZlODZhMWY5OTU4Nzk1MDhiIiwic2VjIjoiaWVpZWllaWFhYWFhYWFvb28xMjQxMDI0azEyMCIsInJhbmRvbSI6IjAuOTcxMzk4MzU5MTk4MTk3NiJ9.2xh8jXkpph95ctqX1lkoTaLy_f31MkUvewgMntkC2mc" "0.0.0.0:8011/mosq?top=ee&name=qq"
       задаем ее значение
       mosquitto_pub -m "1.73" -t "ee/qq"
@@ -32,7 +33,8 @@
       mosquitto_pub -m "5.5" -t "lm/work"
       mosquitto_pub -m "7.5" -t "lm/work"
 
-      проверяем их наличие
+   Проверяем их наличие
+   
       127.0.0.1:8011/list
       выводит
       count	3
@@ -41,12 +43,12 @@
          qq	5.6
          work	5.5
 
-      запускаем сервер 
+   Запускаем сервер 
       http://127.0.0.1:8011/start (выведет сообщение Started)
 
-      строим графики python3 -m prog.graph
+   Строим графики python3 -m prog.graph
 
-      останавливаем сервер 
+   Останавливаем сервер 
       http://127.0.0.1:8011/stop (выведет сообщение Stopped)
 
       Удаляем контейнеры sudo docker rm -f $(sudo docker ps -aq)
