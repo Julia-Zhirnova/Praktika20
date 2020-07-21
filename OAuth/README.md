@@ -1,4 +1,4 @@
-      Для запуска докера:
+   Для запуска докера:
 
       остановить базу данных
       sudo service influxdb stop
@@ -10,7 +10,7 @@
       sudo docker-compose build
       sudo docker-compose up -d
    
-      создаем пользователя и получаем токен
+   Cоздаем пользователя и получаем токен
 
       curl -d "usern=ulia&passw=paparatata" 0.0.0.0:8011/user 
 
