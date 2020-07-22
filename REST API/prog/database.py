@@ -1,13 +1,11 @@
 from influxdb import InfluxDBClient
 
-
 class DataBaseConfig:
     def __init__(self):
         self.database_address = 'localhost'
         self.database_name = 'tsdb'
         self.database_measure_name = 'measurement_tsdb'
         self.database_epoch = "s"
-
 
 class DataBaseConnector:
     def __init__(self):
